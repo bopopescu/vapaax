@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 import can485
+#import usb485
 
 #rh=can485.get_RH()
 #print (rh)

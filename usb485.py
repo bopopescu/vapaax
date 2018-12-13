@@ -1,24 +1,14 @@
 # -*- coding:utf-8 -*-
-import RPi.GPIO as GPIO
 import serial
 import minimalmodbus
-import time
-#import iocalc as IOCalc
-from threading import Thread,Lock
 
-EN_485 =  4
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(EN_485,GPIO.OUT)
-GPIO.output(EN_485,GPIO.HIGH)
-
-conn=minimalmodbus.Instrument('/dev/ttyS0',0)
+conn=minimalmodbus.Instrument('COM6',1)
 conn.serial.baudrate=9600
 conn.serial.bytesize=8
 conn.serial.parity=serial.PARITY_NONE
 conn.serial.stopbits=1
-conn.serial.timeout=1
+conn.serial.timeout=0.1
 conn.mode=minimalmodbus.MODE_ASCII
-#conn.debug=True
 #conn.address=33
 #conn.write_register(1,0,1,16,signed=False)
 #registeraddress, value, numberOfDecimals=0, functioncode=16, signed=False
