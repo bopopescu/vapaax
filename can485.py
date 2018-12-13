@@ -10,7 +10,7 @@ ai = {'T':0 ,'RH':2 ,'Soil':1}
 do = [1]
 
 EN_485 =  4
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BCM)#GPIO.setmode(GPIO.BOARD)
 GPIO.setup(EN_485,GPIO.OUT)
 GPIO.output(EN_485,GPIO.HIGH)
 
