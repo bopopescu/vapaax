@@ -17,17 +17,18 @@
    2. [建議套件](http://negaihoshi.logdown.com/posts/220517-atom-use-ideas-and-recommendations)
 
 ### 範例程式
-  github 下載
+      github 下載
+      
 ### 實作流程
-  1. Vapaa X設備端
-    1. 接電源
-    2. 接溫溼度感測器
-    3. 接土壤感測器
-    4. 接其他感測器
-    5. 接usb → a / b 點
-  2. 電腦設備
-    1. 接上usb → a/b 點
-    2. 確認usb port
+1. Vapaa X設備端
+   1. 接電源
+   2. 接溫溼度感測器
+   3. 接土壤感測器
+   4. 接其他感測器
+   5. 接usb → a / b 點
+2. 電腦設備
+  1. 接上usb → a/b 點
+  2. 確認usb port
   3. 電腦開啟ATOM
   4. 開起專案目錄
   5. 開啟 demo_usb.py
