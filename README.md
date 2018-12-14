@@ -1,8 +1,7 @@
 # Vapaa X
-VapaaX python code
-Clone code
+### VapaaX python code
 
-前置準備
+##前置準備
 python 安裝 
   1. 安裝說明 
     安裝路徑：C:\Python3\
