@@ -11,7 +11,7 @@
       C:\Python3\Scripts>pip3.7.exe install MinimalModbus==0.6
 ```
 
-### IDE安裝→ Atom
+### Atom 安裝
 1. Windown下安裝
    1. [安裝步驟](https://blog.csdn.net/erdouzhang/article/details/56478691)
    2. [建議套件](http://negaihoshi.logdown.com/posts/220517-atom-use-ideas-and-recommendations)
