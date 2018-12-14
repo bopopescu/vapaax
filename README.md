@@ -7,6 +7,7 @@
    1. [安裝步驟](https://kknews.cc/zh-tw/tech/mg642n9.html), 安裝路徑：`C:\Python3\`
    2. 安裝套件 MinimalModbus
 ```
+cmd
     C:\Python3\Scripts>pip3.7.exe install MinimalModbus==0.6
 ```
 
