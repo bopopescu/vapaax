@@ -15,7 +15,7 @@
 1. Windown下安裝
    1. [安裝步驟](https://blog.csdn.net/erdouzhang/article/details/56478691)
    2. 安裝執行套件
-   2. [建議套件](http://negaihoshi.logdown.com/posts/220517-atom-use-ideas-and-recommendations)
+   3. [建議套件](http://negaihoshi.logdown.com/posts/220517-atom-use-ideas-and-recommendations)
 
 ### 範例程式
       github 下載
