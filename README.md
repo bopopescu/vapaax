@@ -27,9 +27,9 @@
    4. 接其他感測器
    5. 接usb → a / b 點
 2. 電腦設備
-  1. 接上usb → a/b 點
-  2. 確認usb port
-  3. 電腦開啟ATOM
-  4. 開起專案目錄
-  5. 開啟 demo_usb.py
-  6. alt+r
+   1. 接上usb → a/b 點
+   2. 確認usb port
+   3. 電腦開啟ATOM
+   4. 開起專案目錄
+   5. 開啟 demo_usb.py
+   6. alt+r
