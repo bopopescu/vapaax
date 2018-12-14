@@ -4,6 +4,7 @@
 ## 前置準備
 ### python 安裝 
 1. [安裝步驟](https://kknews.cc/zh-tw/tech/mg642n9.html)
+
 ...1.安裝路徑：C:\Python3\**
 2. 安裝套件 MinimalModbus
 ```
