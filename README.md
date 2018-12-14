@@ -1,20 +1,20 @@
 # Vapaa X
 ### VapaaX python code
 
-##前置準備
-python 安裝 
+## 前置準備
+### python 安裝 
   1. 安裝說明 
     安裝路徑：C:\Python3\
    b. 安裝套件 MinimalModbus
     C:\Python3\Scripts>pip3.7.exe install MinimalModbus==0.6
 
 
-IDE安裝→ Atom
+### IDE安裝→ Atom
   安裝說明
   建議套件
-範例程式
+### 範例程式
   github 下載
-實作流程
+### 實作流程
   1. Vapaa X設備端
     1. 接電源
     2. 接溫溼度感測器
