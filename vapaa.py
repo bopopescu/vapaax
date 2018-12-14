@@ -40,7 +40,7 @@ class conn():
      elif type=='soil':
          return calcFromA(100, 0, data)
 
-  def do(self, id, on):
-      chack_flag(1)
-      conn.address=33
-      conn.write_bit(id, on, 15)
+ def do(self, id, on):
+     chack_flag(1)
+     conn.address=33
+     conn.write_bit(id, on, 15)
