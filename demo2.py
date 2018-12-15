@@ -10,7 +10,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding = 'utf-8')
 ###
 
 #取目前溫度
-vapaa = vapaa.conn('COM4')
+vapaa = vapaa.conn('COM6')
 temp = vapaa.ai(0,'T')
 
 #判斷溫度到多少，打開開關給水，給水秒關掉

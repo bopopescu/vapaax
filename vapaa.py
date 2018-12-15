@@ -58,33 +58,32 @@ def calcFromV(max,min,data):
 class conn():
  def __init__(self, com):
   flag=0
-  conn=minimalmodbus.Instrument(com,1)
-  conn.serial.baudrate=9600
-  conn.serial.bytesize=8
-  conn.serial.parity=serial.PARITY_NONE
-  conn.serial.stopbits=1
-  conn.serial.timeout=0.4 # seconds. At least 0.2 seconds required for 2400 bits/s.
-  conn.mode=minimalmodbus.MODE_ASCII
+  self.conn=minimalmodbus.Instrument(com,1)
+  self.conn.serial.baudrate=9600
+  self.conn.serial.bytesize=8
+  self.conn.serial.parity=serial.PARITY_NONE
+  self.conn.serial.stopbits=1
+  self.conn.serial.timeout=0.4 # seconds. At least 0.2 seconds required for 2400 bits/s.
+  self.conn.mode=minimalmodbus.MODE_ASCII
 
  def ai(self, id, type):
      chack_flag(0)
-     conn.address=97
+     self.conn.address=97
      try:
-         data=conn.read_register(id,3,4,signed=False)
-         #data=12.56
+         data=self.conn.read_register(id,3,4,signed=False)
          if type=='T':
              return calcFromA(50, 0, data)
          elif type=='RH':
              return calcFromA(100, 0, data)
          elif type=='soil':
-             return calcFromA(100, 0, data)
+             return calcFromV(100, 0, data)
      except Exception as e:
          print("error:" + str(e))
 
  def do(self, id, on):
      chack_flag(1)
-     conn.address=33
+     self.conn.address=33
      try:
-         conn.write_bit(id, on, 15)
+         self.conn.write_bit(id, on, 15)
      except Exception as e:
          print("error:" + str(e))
