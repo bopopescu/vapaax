@@ -67,6 +67,7 @@ class conn():
   self.conn.mode=minimalmodbus.MODE_ASCII
 
  def ai(self, id, type):
+     id=id-1
      chack_flag(0)
      self.conn.address=97
      try:
@@ -81,6 +82,7 @@ class conn():
          print("error:" + str(e))
 
  def do(self, id, on):
+     id=id-1
      chack_flag(1)
      self.conn.address=33
      try:
