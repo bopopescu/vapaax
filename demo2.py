@@ -2,7 +2,7 @@
 import vapaa
 import time
 
-#實作2 :進階判斷
+#實作3 :進階判斷
 ### windows 10 中文亂碼修正
 import sys
 import io

@@ -50,10 +50,10 @@ def chack_flag(flag):
         flag=1
 
 def calcFromA(max,min,data):
-    return ((max-min)/16)*(data-4)+min
+    return int(((max-min)/16)*(data-4)+min)
 
 def calcFromV(max,min,data):
-    return ((max-min)/10)*data+min
+    return int(((max-min)/10)*data+min)
 
 class conn():
  def __init__(self, com):
@@ -73,11 +73,11 @@ class conn():
          data=conn.read_register(id,3,4,signed=False)
          #data=12.56
          if type=='T':
-             return int(calcFromA(50, 0, data))
+             return calcFromA(50, 0, data)
          elif type=='RH':
-             return int(calcFromA(100, 0, data))
+             return calcFromA(100, 0, data)
          elif type=='soil':
-             return int(calcFromA(100, 0, data))
+             return calcFromA(100, 0, data)
      except Exception as e:
          print("error:" + str(e))
 
