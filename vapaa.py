@@ -73,11 +73,11 @@ class conn():
          data=conn.read_register(id,3,4,signed=False)
          #data=12.56
          if type=='T':
-             return calcFromA(50, 0, data)
+             return int(calcFromA(50, 0, data))
          elif type=='RH':
-             return calcFromA(100, 0, data)
+             return int(calcFromA(100, 0, data))
          elif type=='soil':
-             return calcFromA(100, 0, data)
+             return int(calcFromA(100, 0, data))
      except Exception as e:
          print("error:" + str(e))
 
